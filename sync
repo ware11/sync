@@ -424,7 +424,7 @@ function draggobrrrr(gui)
 				end
 			)
 
-			gui.InputChanged:Connect(
+			gui.InputChanged:Connect(				
 				function(input)
 					if
 						input.UserInputType == Enum.UserInputType.MouseMovement or
