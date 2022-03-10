@@ -24,7 +24,7 @@ local UIGradient3 = Instance.new("UIGradient")
 congui.Name = "congui"
 congui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 congui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-congui.ResetOnSpawn=true
+congui.ResetOnSpawn=false
 
 Frame1.Name = "Frame1"
 Frame1.Parent = congui
@@ -34,6 +34,7 @@ Frame1.ClipsDescendants = true
 Frame1.Position = UDim2.new(0, 755, 0, 255)
 Frame1.Selectable = true
 Frame1.Size = UDim2.new(0, 555, 0, 255)
+
 
 UICorner1.Name = "UICorner1"
 UICorner1.Parent = Frame1
@@ -195,7 +196,7 @@ TextButton.MouseButton1Down:connect(function()
 	griphub_ss.Name = "griphub_ss"
 	griphub_ss.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 	griphub_ss.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-	congui.ResetOnSpawn=true
+	griphub_ss.ResetOnSpawn=false
 
 	mainframe.Name = "mainframe"
 	mainframe.Parent = griphub_ss
