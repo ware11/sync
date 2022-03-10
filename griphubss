@@ -447,7 +447,7 @@ cock.MouseButton1Down:connect(function()
 	h = game.Players.LocalPlayer.Character.Humanoid
 	tracks = h:GetPlayingAnimationTracks()
 	for _,x in pairs(tracks)
-	do x:Stop()
+	do x:play()
 	end
 end)
 UICorner2_7.CornerRadius = UDim.new(0, 2)
@@ -494,7 +494,7 @@ backpack.MouseButton1Down:connect(function()
 	h = game.Players.LocalPlayer.Character.Humanoid
 	tracks = h:GetPlayingAnimationTracks()
 	for _,x in pairs(tracks)
-	do x:Stop()
+	do x:play()
 	end
 end)
 UICorner2_8.CornerRadius = UDim.new(0, 2)
