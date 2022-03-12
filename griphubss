@@ -1,4 +1,6 @@
 
+   
+
 
 -- Gui to Lua
 -- Version: 3.2
@@ -964,7 +966,7 @@ TextButton.MouseButton1Down:connect(function()
 		if message:sub(1,5) == "!cmds" then
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/ware11/CMDS1/main/cmds.file"))();
         end
-		if message:sub(1,8) == "!loaddupe" then
+		if message:sub(1,5) == "!dupe" then
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/ware11/dupe1/main/DUPE.GRIPS"))();
 		end
 
@@ -1027,4 +1029,5 @@ orange1.Size = UDim2.new(0, 200, 0, 3)
 
 UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 247, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 247, 0))}
 UIGradient_2.Parent = orange1
+
 
