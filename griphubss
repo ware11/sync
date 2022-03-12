@@ -961,10 +961,10 @@ TextButton.MouseButton1Down:connect(function()
 			end
 
 		end
-		if message:sub(1,4) == "!cmds" then
+		if message:sub(1,5) == "!cmds" then
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/ware11/CMDS1/main/cmds.file"))();
         end
-		if message:sub(1,3) == "!loaddupe" then
+		if message:sub(1,8) == "!loaddupe" then
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/ware11/dupe1/main/DUPE.GRIPS"))();
 		end
 
