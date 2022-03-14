@@ -876,7 +876,7 @@ TextButton.MouseButton1Down:connect(function()
 	local function OHDC_fake_script() -- griphub_ss.LocalScript 
 		local script = Instance.new('LocalScript', griphub_ss)
 
-		local HotKey = Enum.KeyCode.Q-- Key to open Gui --
+		local HotKey = Enum.KeyCode.F1-- Key to open Gui --
 		local UIS = game:GetService("UserInputService")
 
 		UIS.InputBegan:Connect(function(Key)
