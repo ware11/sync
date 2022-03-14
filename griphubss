@@ -962,7 +962,7 @@ plr.Chatted:connect(function(message)
 			end
 		end
 		
-		if message:sub(1,4) == "!tpa" then
+		if message:sub(1,4) == "!tpp" then
 
 			local args = message:split(" ")
 
